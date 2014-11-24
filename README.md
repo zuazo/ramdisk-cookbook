@@ -3,8 +3,8 @@ Description
 [![Cookbook Version](https://img.shields.io/cookbook/v/ramdisk.svg?style=flat)](https://supermarket.getchef.com/cookbooks/ramdisk)
 [![Dependency Status](http://img.shields.io/gemnasium/onddo/ramdisk-cookbook.svg?style=flat)](https://gemnasium.com/onddo/ramdisk-cookbook)
 [![Code Climate](http://img.shields.io/codeclimate/github/onddo/ramdisk-cookbook.svg?style=flat)](https://codeclimate.com/github/onddo/ramdisk-cookbook)
-[![Build Status](http://img.shields.io/travis/onddo/ramdisk-cookbook.svg?style=flat)](https://travis-ci.org/onddo/ramdisk-cookbook)
-[![Coverage Status](http://img.shields.io/coveralls/onddo/ramdisk-cookbook.svg?style=flat)](https://coveralls.io/r/onddo/ramdisk-cookbook?branch=master)
+[![Build Status](http://img.shields.io/travis/onddo/ramdisk-cookbook/0.1.0.svg?style=flat)](https://travis-ci.org/onddo/ramdisk-cookbook)
+[![Coverage Status](http://img.shields.io/coveralls/onddo/ramdisk-cookbook/0.1.0.svg?style=flat)](https://coveralls.io/r/onddo/ramdisk-cookbook?branch=0.1.0)
 
 This cookbook manages tmpfs RAM disks with Chef.
 
