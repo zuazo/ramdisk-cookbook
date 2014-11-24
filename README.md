@@ -49,7 +49,7 @@ If you change the RAM disk size, the `ramdisk` resource will try to remount the 
 | Parameter  | Default          | Description                       |
 |:-----------|:-----------------|:----------------------------------|
 | path       | *name parameter* | tmpfs RAM disk mount path.
-| size       | `nil`            | Size of the filesystem (**required**). The size is given in bytes. Also accepts a sufix *k*, *m* or *g*.
+| size       | `nil`            | Size of the filesystem (**required**). The size is given in bytes. Also accepts a suffix *k*, *m* or *g*.
 | persist    | `true`           | Whether to persist the RAM disk. **Note:** The data will not persist between reboots. This only creates the RAM disk on each boot.
 | nosuid     | `false`          | Do not allow set-user-identifier or set-group-identifier bits to take effect.
 | nodev      | `false`          | Do not interpret character or block special devices on the filesystem.
@@ -72,8 +72,8 @@ These attributes are primarily intended to support the different platforms. Do n
 | Attribute                                 | Default      | Description                       |
 |:------------------------------------------|:-------------|:----------------------------------|
 | `node['ramdisk']['options']['default']`   | `['rw']`     | Minimal default mount options to set.
-| `node['ramdisk']['options']['flags']`     | *calculated* | Supported mount flag options: nosuid, noexec, ...
-| `node['ramdisk']['options']['variables']` | *calculated* | Supported mount variable options: size=, mode=, uid=, ...
+| `node['ramdisk']['options']['flags']`     | *calculated* | Supported mount flag options: `nosuid`, `noexec`, ...
+| `node['ramdisk']['options']['variables']` | *calculated* | Supported mount variable options: `size`=, `mode`=, `uid`=, ...
 | `node['ramdisk']['supports']['remount']`  | *calculated* | Whether mount remount operation is supported.
 
 Usage
