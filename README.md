@@ -6,7 +6,7 @@ Description
 [![Build Status](http://img.shields.io/travis/onddo/ramdisk-cookbook.svg?style=flat)](https://travis-ci.org/onddo/ramdisk-cookbook)
 [![Coverage Status](http://img.shields.io/coveralls/onddo/ramdisk-cookbook.svg?style=flat)](https://coveralls.io/r/onddo/ramdisk-cookbook?branch=master)
 
-This cookbook manage tmpfs RAM disks with Chef.
+This cookbook manages tmpfs RAM disks with Chef.
 
 Requirements
 ============
