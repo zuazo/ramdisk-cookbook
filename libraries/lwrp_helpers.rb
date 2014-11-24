@@ -24,19 +24,24 @@ class Chef
   module Ramdisk
     # Helper methods to use from default LWRP
     module LwrpHelpers
+      extend Forwardable
+      %w(uid gid user group).each do |m|
+        def_delegator :new_resource, m
+      end
+
       def assert_require_size
         return unless new_resource.size.nil?
         fail Exceptions::ValidationFailed, 'Required argument size is missing!'
       end
 
       def uid_from_user
-        return unless new_resource.uid.nil? && !new_resource.user.nil?
-        new_resource.uid(Etc.getpwnam(new_resource.user).uid)
+        return unless uid.nil? && !user.nil?
+        uid(Etc.getpwnam(user).uid)
       end
 
       def gid_from_group
-        return unless new_resource.gid.nil? && !new_resource.group.nil?
-        new_resource.gid(Etc.getgrnam(new_resource.group).gid)
+        return unless gid.nil? && !group.nil?
+        gid(Etc.getgrnam(group).gid)
       end
 
       def remount?
