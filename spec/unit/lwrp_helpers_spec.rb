@@ -65,7 +65,6 @@ describe Chef::Ramdisk::LwrpHelpers, order: :random do
       it 'does not set new_resource#uid' do
         expect(new_resource).to_not receive(:uid).with(anything)
       end
-
     end # context with new_resource#user not set
 
     context 'with new_resource#uid set' do
@@ -77,7 +76,6 @@ describe Chef::Ramdisk::LwrpHelpers, order: :random do
       it 'does not set new_resource#uid' do
         expect(new_resource).to_not receive(:uid).with(anything)
       end
-
     end # context with new_resource#uid set
 
     context 'with new_resource#user set' do
@@ -113,7 +111,6 @@ describe Chef::Ramdisk::LwrpHelpers, order: :random do
       it 'does not set new_resource#gid' do
         expect(new_resource).to_not receive(:gid).with(anything)
       end
-
     end # context with new_resource#group not set
 
     context 'with new_resource#gid set' do
@@ -125,7 +122,6 @@ describe Chef::Ramdisk::LwrpHelpers, order: :random do
       it 'does not set new_resource#gid' do
         expect(new_resource).to_not receive(:gid).with(anything)
       end
-
     end # context with new_resource#gid set
 
     context 'with new_resource#group set' do
@@ -210,11 +206,10 @@ describe Chef::Ramdisk::LwrpHelpers, order: :random do
 
       it 'raises an error' do
         expect { provider.assert_require_size }.to raise_error(
-            Chef::Exceptions::ValidationFailed,
-            'Required argument size is missing!'
+          Chef::Exceptions::ValidationFailed,
+          'Required argument size is missing!'
         )
       end
-
     end # context with size set
   end # describe #assert_require_size
 
@@ -295,7 +290,6 @@ describe Chef::Ramdisk::LwrpHelpers, order: :random do
     it 'merges flags and variables options' do
       expect(provider.mount_options).to eq(flags + variables)
     end
-
   end # describe #mount_options
 
   describe '#resource_run_action' do

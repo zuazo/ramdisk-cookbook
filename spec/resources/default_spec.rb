@@ -33,7 +33,6 @@ describe 'ramdisk_test::default', order: :random do
     end
 
     context 'ramdisk[/mnt/ramdisk1]' do
-
       it 'creates ramdisk1 directory' do
         expect(chef_run).to create_directory('/mnt/ramdisk1')
       end
@@ -53,11 +52,9 @@ describe 'ramdisk_test::default', order: :random do
         expect(chef_run).to mount_mount('/mnt/ramdisk1')
           .with_options(%w(rw size=10485760))
       end
-
     end # context ramdisk[/mnt/ramdisk1]
 
     context 'ramdisk[/mnt/ramdisk2]' do
-
       it 'creates ramdisk2 directory' do
         expect(chef_run).to create_directory('/mnt/ramdisk2')
       end
@@ -89,7 +86,6 @@ describe 'ramdisk_test::default', order: :random do
     end # context ramdisk[/mnt/ramdisk2]
 
     context 'ramdisk[/mnt/ramdisk3]' do
-
       it 'creates /mnt/ramdisk3 directory' do
         expect(chef_run).to create_directory('/mnt/ramdisk3')
       end
@@ -109,11 +105,9 @@ describe 'ramdisk_test::default', order: :random do
             size=8m nr_inodes=999k
           ))
       end
-
     end # context ramdisk[/mnt/ramdisk3]
 
     context 'ramdisk[/mnt/ramdisk4]' do
-
       it 'creates /mnt/ramdisk4 directory' do
         expect(chef_run).to create_directory('/mnt/ramdisk4')
       end
@@ -130,11 +124,9 @@ describe 'ramdisk_test::default', order: :random do
         expect(chef_run).to mount_mount('/mnt/ramdisk4')
           .with_options(%w(rw uid=1999 gid=1999 size=5m))
       end
-
     end # context ramdisk[/mnt/ramdisk4]
 
     context 'ramdisk[/mnt/ramdisk5] (initial)' do
-
       it 'creates /mnt/ramdisk5 directory' do
         expect(chef_run).to create_directory('/mnt/ramdisk5 (initial)')
           .with_path('/mnt/ramdisk5')
@@ -154,11 +146,9 @@ describe 'ramdisk_test::default', order: :random do
         expect(chef_run).to mount_mount('/mnt/ramdisk5 (initial)')
           .with_options(%w(rw size=5m))
       end
-
     end # context ramdisk[/mnt/ramdisk5] (initial)
 
     context 'ramdisk[/mnt/ramdisk5] (resize)' do
-
       it 'creates /mnt/ramdisk5 directory' do
         expect(chef_run).to create_directory('/mnt/ramdisk5 (resize)')
           .with_path('/mnt/ramdisk5')
@@ -173,7 +163,6 @@ describe 'ramdisk_test::default', order: :random do
         expect(chef_run).to remount_mount('/mnt/ramdisk5 (resize)')
           .with_options(%w(rw size=10m))
       end
-
     end # context ramdisk[/mnt/ramdisk5] (initial)
   end # context ramdisk_test cookbook
 end
