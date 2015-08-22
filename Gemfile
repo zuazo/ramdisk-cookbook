@@ -4,6 +4,8 @@
 
 source 'https://rubygems.org'
 
+chef_version = ENV.key?('CHEF_VERSION') ? ENV['CHEF_VERSION'] : nil
+
 group :test do
   gem 'rake'
   gem 'berkshelf', '~> 3.1'
@@ -15,13 +17,15 @@ group :style do
 end
 
 group :unit do
+  gem 'chef', chef_version unless chef_version.nil? # Ruby 1.9.3 support
   gem 'simplecov', '~> 0.9'
   gem 'should_not', '~> 1.1'
   gem 'chefspec', '~> 4.1'
+  gem 'ohai', '~> 7.4' if RUBY_VERSION < '2'
 end
 
 group :integration do
-  gem 'vagrant-wrapper', '~> 1.2'
+  gem 'vagrant-wrapper', '~> 2.0'
   gem 'test-kitchen', '~> 1.2'
   gem 'kitchen-vagrant', '~> 0.10'
 end
