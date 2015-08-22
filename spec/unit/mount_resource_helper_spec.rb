@@ -44,7 +44,6 @@ describe Chef::Ramdisk::MountResourceHelper, order: :random do
   end
 
   context '#parse_options' do
-
     it 'supports string options' do
       opts = 'rw,nosuid,size=8192k,mode=755, nodiratime'
       expect(resource_helper.parse_options(opts)).to eq(
