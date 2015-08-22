@@ -1,10 +1,10 @@
 Description
 ===========
 [![Cookbook Version](https://img.shields.io/cookbook/v/ramdisk.svg?style=flat)](https://supermarket.chef.io/cookbooks/ramdisk)
-[![Dependency Status](http://img.shields.io/gemnasium/onddo/ramdisk-cookbook.svg?style=flat)](https://gemnasium.com/onddo/ramdisk-cookbook)
-[![Code Climate](http://img.shields.io/codeclimate/github/onddo/ramdisk-cookbook.svg?style=flat)](https://codeclimate.com/github/onddo/ramdisk-cookbook)
-[![Build Status](http://img.shields.io/travis/onddo/ramdisk-cookbook.svg?style=flat)](https://travis-ci.org/onddo/ramdisk-cookbook)
-[![Coverage Status](http://img.shields.io/coveralls/onddo/ramdisk-cookbook.svg?style=flat)](https://coveralls.io/r/onddo/ramdisk-cookbook?branch=master)
+[![Dependency Status](http://img.shields.io/gemnasium/zuazo/ramdisk-cookbook.svg?style=flat)](https://gemnasium.com/zuazo/ramdisk-cookbook)
+[![Code Climate](http://img.shields.io/codeclimate/github/zuazo/ramdisk-cookbook.svg?style=flat)](https://codeclimate.com/github/zuazo/ramdisk-cookbook)
+[![Build Status](http://img.shields.io/travis/zuazo/ramdisk-cookbook.svg?style=flat)](https://travis-ci.org/zuazo/ramdisk-cookbook)
+[![Coverage Status](http://img.shields.io/coveralls/zuazo/ramdisk-cookbook.svg?style=flat)](https://coveralls.io/r/zuazo/ramdisk-cookbook?branch=master)
 
 This cookbook manages tmpfs RAM disks with Chef.
 
@@ -24,7 +24,7 @@ This cookbook has been tested on the following platforms:
 
 FreeBSD support is somewhat limited due to its current implementation: the *remount* is not supported on this platform and some mount options are ignored.
 
-Please, [let us know](https://github.com/onddo/ramdisk-cookbook/issues/new?title=I%20have%20used%20it%20successfully%20on%20...) if you use it successfully on any other platform.
+Please, [let us know](https://github.com/zuazo/ramdisk-cookbook/issues/new?title=I%20have%20used%20it%20successfully%20on%20...) if you use it successfully on any other platform.
 
 ## Required Applications
 
@@ -121,27 +121,28 @@ end
 Testing
 =======
 
-See [TESTING.md](https://github.com/onddo/ramdisk-cookbook/blob/master/TESTING.md).
+See [TESTING.md](https://github.com/zuazo/ramdisk-cookbook/blob/master/TESTING.md).
 
 Contributing
 ============
 
-Please do not hesitate to [open an issue](https://github.com/onddo/ramdisk-cookbook/issues/new) with any questions or problems.
+Please do not hesitate to [open an issue](https://github.com/zuazo/ramdisk-cookbook/issues/new) with any questions or problems.
 
-See [CONTRIBUTING.md](https://github.com/onddo/ramdisk-cookbook/blob/master/CONTRIBUTING.md).
+See [CONTRIBUTING.md](https://github.com/zuazo/ramdisk-cookbook/blob/master/CONTRIBUTING.md).
 
 TODO
 ====
 
-See [TODO.md](https://github.com/onddo/ramdisk-cookbook/blob/master/TODO.md).
+See [TODO.md](https://github.com/zuazo/ramdisk-cookbook/blob/master/TODO.md).
 
 License and Author
 ==================
 
 |                      |                                          |
 |:---------------------|:-----------------------------------------|
-| **Author:**          | [Xabier de Zuazo](https://github.com/zuazo) (<xabier@onddo.com>)
-| **Copyright:**       | Copyright (c) 2014, Onddo Labs, SL. (www.onddo.com)
+| **Author:**          | [Xabier de Zuazo](https://github.com/zuazo) (<xabier@zuazo.org>)
+| **Copyright:**       | Copyright (c) 2015, Xabier de Zuazo
+| **Copyright:**       | Copyright (c) 2014, Onddo Labs, SL.
 | **License:**         | Apache License, Version 2.0
 
     Licensed under the Apache License, Version 2.0 (the "License");
