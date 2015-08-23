@@ -25,7 +25,7 @@ class Chef
     # Helper methods to use from default LWRP
     module LwrpHelpers
       extend Forwardable
-      %w(uid gid user group).each do |m|
+      %w(uid gid).each do |m|
         def_delegator :new_resource, m
       end
 
@@ -35,13 +35,13 @@ class Chef
       end
 
       def uid_from_user
-        return unless uid.nil? && !user.nil?
-        uid(Etc.getpwnam(user).uid)
+        return unless uid.nil? && !new_resource.user.nil?
+        uid(Etc.getpwnam(new_resource.user).uid)
       end
 
       def gid_from_group
-        return unless gid.nil? && !group.nil?
-        gid(Etc.getgrnam(group).gid)
+        return unless gid.nil? && !new_resource.group.nil?
+        gid(Etc.getgrnam(new_resource.group).gid)
       end
 
       def remount?

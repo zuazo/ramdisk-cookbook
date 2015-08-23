@@ -142,11 +142,14 @@ describe Chef::Ramdisk::LwrpHelpers, order: :random do
 
   describe '#remount?' do
     let(:mount_resource_helper) { 'mount_resource_helper' }
+    let(:mount_resource) { 'mount_resource' }
     let(:result) { 'result' }
     before do
       allow(Chef::Ramdisk::MountResourceHelper).to receive(:new)
         .and_return(mount_resource_helper)
       allow(mount_resource_helper).to receive(:load_current_resource)
+      allow(provider).to receive(:mount_resource)
+        .and_return(mount_resource)
       allow(mount_resource_helper).to receive(:mount_options_changed?)
         .and_return(true)
       allow(mount_resource_helper).to receive(:mount_options_changed?)
@@ -161,7 +164,6 @@ describe Chef::Ramdisk::LwrpHelpers, order: :random do
       end
     end # without remount support
 
-    # TODO
     context 'with remount support' do
       before { node.set['ramdisk']['supports']['remount'] = true }
       after { provider.remount? }
