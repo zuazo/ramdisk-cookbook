@@ -39,7 +39,7 @@ describe file('/mnt/ramdisk4') do
   if platform == 'freebsd'
     it { should be_mounted }
   else
-    it { should be_mounted.with(mount_with)  }
+    it { should be_mounted.with(mount_with) }
     it { should be_readable.by_user('bob') }
   end
 end

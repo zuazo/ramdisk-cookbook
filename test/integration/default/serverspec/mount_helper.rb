@@ -55,7 +55,7 @@ end
 
 def bytes2kbytes(bytes)
   case bytes
-  when Fixnum, /^[0-9]+$/  then "#{(bytes.to_i / 1024).round}k"
+  when Fixnum, /^[0-9]+$/ then "#{(bytes.to_i / 1024).round}k"
   when /^[0-9]+m$/ then "#{(bytes.to_i * 1024).round}k"
   when /^[0-9]+g$/ then "#{(bytes.to_i * 1_048_576).round}k"
   else
