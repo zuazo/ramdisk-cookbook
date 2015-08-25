@@ -65,7 +65,8 @@ end
 
 def generate_mount_size(num)
   if (%w(centos debian).include?(platform) && platform_version >= 7) ||
-     %w(fedora).include?(platform)
+     (%w(ubuntu).include?(platform) && platform_version >= 15) ||
+     %w(fedora opensuse).include?(platform)
     bytes2kbytes(num)
   else
     num
@@ -74,7 +75,8 @@ end
 
 def generate_mount_inodes(num)
   if (%w(centos debian).include?(platform) && platform_version >= 7) ||
-     %w(fedora).include?(platform)
+     (%w(ubuntu).include?(platform) && platform_version >= 15) ||
+     %w(fedora suse).include?(platform)
     bytes2integer(num)
   else
     num
