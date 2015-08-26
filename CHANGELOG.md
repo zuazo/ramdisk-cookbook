@@ -3,6 +3,10 @@ ramdisk CHANGELOG
 
 This file is used to list changes made in each version of the `ramdisk` cookbook.
 
+## v0.2.1 (2015-08-26)
+
+* README: Fix coverage badge.
+
 ## v0.2.0 (2015-08-26)
 
 * `LwrpHelpers`: improve similar code using delegation.
