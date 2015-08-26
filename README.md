@@ -3,10 +3,10 @@ Ramdisk Cookbook
 [![Cookbook Version](https://img.shields.io/cookbook/v/ramdisk.svg?style=flat)](https://supermarket.chef.io/cookbooks/ramdisk)
 [![Dependency Status](http://img.shields.io/gemnasium/zuazo/ramdisk-cookbook.svg?style=flat)](https://gemnasium.com/zuazo/ramdisk-cookbook)
 [![Code Climate](http://img.shields.io/codeclimate/github/zuazo/ramdisk-cookbook.svg?style=flat)](https://codeclimate.com/github/zuazo/ramdisk-cookbook)
-[![Build Status](http://img.shields.io/travis/zuazo/ramdisk-cookbook.svg?style=flat)](https://travis-ci.org/zuazo/ramdisk-cookbook)
-[![Coverage Status](http://img.shields.io/coveralls/zuazo/ramdisk-cookbook.svg?style=flat)](https://coveralls.io/r/zuazo/ramdisk-cookbook?branch=master)
+[![Build Status](http://img.shields.io/travis/zuazo/ramdisk-cookbook/0.2.0.svg?style=flat)](https://travis-ci.org/zuazo/ramdisk-cookbook)
+[![Coverage Status](http://img.shields.io/coveralls/zuazo/ramdisk-cookbook/0.2.0.svg?style=flat)](https://coveralls.io/r/zuazo/ramdisk-cookbook?/Coverage Status](http://img.shields.io/coveralls/zuazo/ramdisk-cookbook/0.2.0.svg?style=flat)](https://coveralls.io/r/zuazo/ramdisk-cookbook?branch=0.2.0)
 
-This cookbook manages tmpfs RAM disks with Chef.
+This cookbook manages tmpfs RAM disks with [Chef](https://www.chef.io/).
 
 Requirements
 ============
@@ -168,6 +168,7 @@ License and Author
 |                      |                                          |
 |:---------------------|:-----------------------------------------|
 | **Author:**          | [Xabier de Zuazo](https://github.com/zuazo) (<xabier@zuazo.org>)
+| **Contributor:**     | [Hendrik Bergunde](https://github.com/hendrikb)
 | **Copyright:**       | Copyright (c) 2015, Xabier de Zuazo
 | **Copyright:**       | Copyright (c) 2014, Onddo Labs, SL.
 | **License:**         | Apache License, Version 2.0
