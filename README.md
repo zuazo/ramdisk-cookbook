@@ -1,5 +1,5 @@
-Description
-===========
+Ramdisk Cookbook
+================
 [![Cookbook Version](https://img.shields.io/cookbook/v/ramdisk.svg?style=flat)](https://supermarket.chef.io/cookbooks/ramdisk)
 [![Dependency Status](http://img.shields.io/gemnasium/zuazo/ramdisk-cookbook.svg?style=flat)](https://gemnasium.com/zuazo/ramdisk-cookbook)
 [![Code Climate](http://img.shields.io/codeclimate/github/zuazo/ramdisk-cookbook.svg?style=flat)](https://codeclimate.com/github/zuazo/ramdisk-cookbook)
