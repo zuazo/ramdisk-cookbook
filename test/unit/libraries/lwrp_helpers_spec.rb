@@ -17,17 +17,17 @@
 # limitations under the License.
 #
 
-require 'spec_helper'
+require_relative '../spec_helper'
+require_relative '../support/fake_provider'
 require 'chef/exceptions'
 require 'lwrp_helpers'
-require 'support/fake_provider'
 require 'mount_resource_helper'
 
 describe Chef::Ramdisk::LwrpHelpers, order: :random do
   let(:path) { '/mnt/ramdisk1' }
   let(:node) do
     node = Chef::Node.new
-    Dir.glob("#{::File.dirname(__FILE__)}/../../attributes/*.rb") do |f|
+    Dir.glob("#{::File.dirname(__FILE__)}/../../../attributes/*.rb") do |f|
       node.from_file(f)
     end
     node

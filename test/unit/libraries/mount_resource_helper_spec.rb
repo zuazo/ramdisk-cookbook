@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-require 'spec_helper'
+require_relative '../spec_helper'
 require 'mount_resource_helper'
 
 describe Chef::Ramdisk::MountResourceHelper, order: :random do
