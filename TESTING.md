@@ -73,30 +73,3 @@ Then, you must configure test-kitchen to use `.kitchen.cloud.yml` configuration 
     $ export KITCHEN_LOCAL_YAML=".kitchen.cloud.yml"
     $ bundle exec kitchen list
     [...]
-
-## ChefSpec Matchers
-
-### ramdisk(path)
-
-Helper method for locating a `ramdisk` resource in the collection.
-
-```ruby
-resource = chef_run.ramdisk('/mnt/ramdisk1')
-expect(resource).to notify('service[java-app]').to(:restart)
-```
-
-### create_ramdisk(path)
-
-Assert that the Chef run creates a ramdisk.
-
-```ruby
-expect(chef_run).to create_ramdisk('/mnt/ramdisk1')
-```
-
-### delete_ramdisk(name)
-
-Assert that the Chef run deletes a ramdisk.
-
-```ruby
-expect(chef_run).to delete_ramdisk('/mnt/ramdisk1')
-```
