@@ -3,7 +3,21 @@
 # vi: set ft=ruby :
 # Based on magic_shell cookbook code, thanks @sethvargo.
 
-# More info at https://github.com/jimweirich/rake/blob/master/doc/rakefile.rdoc
+#
+# Available Rake tasks:
+#
+# $ rake -T
+# rake clean                    # Clean some generated files
+# rake integration              # Run Test Kitchen integration tests
+# rake style                    # Run all style checks
+# rake style:chef               # Run Chef style checks
+# rake style:ruby               # Run Ruby style checks
+# rake style:ruby:auto_correct  # Auto-correct RuboCop offenses
+# rake travis:ci                # Run tests on Travis
+# rake unit                     # Run ChefSpec unit tests
+#
+# More info at https://github.com/ruby/rake/blob/master/doc/rakefile.rdoc
+#
 
 require 'bundler/setup'
 
